@@ -17,29 +17,7 @@ class App extends React.Component {
     this.state = {
       // items: sampleData,
       auth: true,
-      meetingLocations: [{ id: 'tacos-y-quesadillas-mexico-manhattan',
-        name: 'Tacos Y Quesadillas Mexico',
-        image_url: 'https://s3-media4.fl.yelpcdn.com/bphoto/drLoFbH5OHpiptuadnXw_A/o.jpg',
-        is_closed: false,
-        url: 'https://www.yelp.com/biz/tacos-y-quesadillas-mexico-manhattan?adjust_creative=TuI7KPQ2iOcLaRBdE3LpMA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=TuI7KPQ2iOcLaRBdE3LpMA',
-        review_count: 37,
-        categories: [ [Object] ],
-        rating: 4.5,
-        coordinates: { latitude: 40.7687515765429, longitude: -73.9850422739983 },
-        transactions: [],
-        price: '$',
-        location:
-        { address1: '924 9th Ave',
-          address2: '',
-          address3: '',
-          city: 'Manhattan',
-          zip_code: '10019',
-          country: 'US',
-          state: 'NY',
-          display_address: [Array] },
-        phone: '',
-        display_phone: '',
-        distance: 309.03863120119996 }]
+      meetingLocations: sampleData.sampleData
     };
   }
 
@@ -55,7 +33,6 @@ class App extends React.Component {
   }
 
   render () {
-
     return (
       <div>
         {/*<LoginViewController items={this.state.items} isLoggedIn={this.state.auth}/>*/}
