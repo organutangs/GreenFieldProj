@@ -102,39 +102,31 @@ class MeetUpForm extends React.Component {
 
   render(){
     return (
-      <div>
-        <table>
-          <tbody>
-          <tr>
-            <div id="search">
-              <p>Your name</p>
-              <input type="text" value={ this.props.userId }/>
-            </div>
-          </tr>
-          <tr>
-            <div id="search">
-              <p>Enter your location</p>
-              <Autocomplete
-                onPlaceSelected={ (place) => {
-                  this.setState({ userLocationAddress: place.formatted_address })
-                } }
-                types={['address']}
-                onChange={ this.handleAddressChange }
-              />
-            </div>
-          </tr>
-          <tr>
-            <div id="search">
-              <p>Your friend's name or address</p>
-              <input type="text" value={ this.state.friendId } onChange={ this.handleFriendChange } />
-            </div>
-          </tr>
-          <tr>
-            <button className="submit" onClick={this.handleSubmitFriendOrAddress}>Join</button>
-          </tr>
+      <div className="meetUpForm">
+        <div className="searchField">
+          <div className="search">
+            <p>Your name</p>
+            <input type="text" value={ this.props.userId }/>
+          </div>
+          <div className="search">
+            <p>Enter your location</p>
+            <Autocomplete
+              onPlaceSelected={ (place) => {
+                this.setState({ userLocationAddress: place.formatted_address })
+              } }
+              types={['address']}
+              onChange={ this.handleAddressChange }
+            />
+          </div>
+          <div className="search">
+            <p>Your friend's name or address</p>
+            <input type="text" value={ this.state.friendId } onChange={ this.handleFriendChange } />
+          </div>
+        </div>
+        <div className="submitField">
+          <button className="submit" onClick={this.handleSubmitFriendOrAddress}>Go</button>
           <p className="messageText">{ this.state.status }</p>
-          </tbody>
-        </table>
+        </div>
       </div>
     );
   }

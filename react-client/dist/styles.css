@@ -35,7 +35,7 @@ table{
     margin-bottom: 15px;
 }
 
-#search > p {
+.search > p {
     display: block;
     font-size: 15px;
     margin: 12px 0 4px 7px;
@@ -138,7 +138,7 @@ img.listing-object {
     margin: 3px 0px 0px 0px;
     padding: 0;
     color: #4E9DEA;
-    font-size: 11px;
+    font-size: 15px;
     vertical-align: top;
     /*display: inline-block;*/
 }
@@ -193,7 +193,11 @@ form.registerForm {
 }
 
 div.mapBox > div > div > div > div > div > div > div > div > div > div > div > div {
-    padding-top: 66px;
+    margin-top: 66px;
+    background-color: rgba(255,255,255,1);
+    padding: 3px 3px 3px 3px;
+    border-radius: 1px;
+
 }
 
 .signInForms {
@@ -210,11 +214,20 @@ input.submit, button.submit {
     display: inline-block;
     font-size: 16px;
     padding: 6px 6px 6px 8px;
+    margin: 5px 5px 5px 0px;
     outline: none;
     background-color: #fafafc;
     border: 1px solid #cccccc;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+input.submit:hover, button.submit:hover {
+    background-color: #dfe2dc;
+    transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+
 
 .title {
     font-size: 2em;
@@ -241,4 +254,29 @@ input.submit, button.submit {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.6);
+}
+
+.meetUpForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchField {
+    display: flex;
+    margin: 3px 3px 3px 5px;
+}
+.search {
+    width: 220px;
+}
+
+.search > input {
+    width: 200px;
+}
+
+.search > div > input {
+    width: 200px;
+}
+
+.submitField {
+    margin: 5px 5px 5px 5px;
 }
