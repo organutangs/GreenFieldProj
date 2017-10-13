@@ -67,9 +67,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 ## Screenshot
 
-![](dist/images/HalfWazeLogin.png?raw=true)
+![](images/HalfWazeLogin.png)
 
-![](dist/images/HalfWazeMain?raw=true)
+![](images/HalfWazeMain.png)
 
 ## Technology Stack
 
